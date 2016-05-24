@@ -3,7 +3,7 @@ require "pry"
 
 class Currency
 attr_reader :amount, :denomination
-	def initialize(amount, currency)
+	def initialize(amount, currency=:usd)
 		@amount = amount
 		@denomination = currency
 	end
